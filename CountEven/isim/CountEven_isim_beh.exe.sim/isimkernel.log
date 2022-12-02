@@ -1,0 +1,28 @@
+Command line:
+   CountEven_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  6001
+
+Tue Nov 23 09:44:39 2021
+
+
+ Elaboration Time: 0.125 sec
+
+ Current Memory Usage: 5154.78 Meg
+
+ Total Signals          : 13
+ Total Nets             : 13
+ Total Signal Drivers   : 5
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 6
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 93
+
+ Total Simulation Time: 0.125 sec
+
+ Current Memory Usage: 5154.78 Meg
+
+Tue Nov 23 09:44:51 2021
+

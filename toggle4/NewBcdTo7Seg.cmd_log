@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -verilog NewBcdTo7Seg_drc.vf -w D:/Workers/Schematic/NewBcdTo7Seg.sch 
+sch2sym -intstyle ise -family spartan6 -refsym NewBcdTo7Seg D:/Workers/Schematic/NewBcdTo7Seg.sch D:/Workers/Xilinx/toggle4/NewBcdTo7Seg.sym 

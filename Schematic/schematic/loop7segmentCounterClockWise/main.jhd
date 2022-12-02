@@ -1,0 +1,3 @@
+MODULE main
+	SUBMODULE encoder
+		INSTANCE XLXI_1

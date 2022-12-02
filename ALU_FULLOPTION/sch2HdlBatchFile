@@ -1,0 +1,12 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,D:/Workers/Xilinx/ALU_FULLOPTION/ALU.vhf,-w,D:/Workers/Xilinx/ALU_FULLOPTION/ALU.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,D:/Workers/Xilinx/ALU_FULLOPTION/ADD.vhf,-w,D:/Workers/Xilinx/ALU_FULLOPTION/ADD.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,D:/Workers/Xilinx/ALU_FULLOPTION/SUB.vhf,-w,D:/Workers/Xilinx/ALU_FULLOPTION/SUB.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,D:/Workers/Xilinx/ALU_FULLOPTION/SHIFTBIT.vhf,-w,D:/Workers/Xilinx/ALU_FULLOPTION/SHIFTBIT.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,D:/Workers/Xilinx/ALU_FULLOPTION/ExOr.vhf,-w,D:/Workers/Xilinx/ALU_FULLOPTION/ExOr.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,D:/Workers/Xilinx/ALU_FULLOPTION/BCD_0_F_Decoder.vhf,-w,D:/Workers/Xilinx/ALU_FULLOPTION/BCD_0_F_Decoder.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,D:/Workers/Xilinx/ALU_FULLOPTION/diviser_2.vhf,-w,D:/Workers/Xilinx/ALU_FULLOPTION/diviser_2.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,D:/Workers/Xilinx/ALU_FULLOPTION/diviser_5.vhf,-w,D:/Workers/Xilinx/ALU_FULLOPTION/diviser_5.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,D:/Workers/Xilinx/ALU_FULLOPTION/diviser_10.vhf,-w,D:/Workers/Xilinx/ALU_FULLOPTION/diviser_10.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,D:/Workers/Xilinx/ALU_FULLOPTION/diviser_100K.vhf,-w,D:/Workers/Xilinx/ALU_FULLOPTION/diviser_100K.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,D:/Workers/Xilinx/ALU_FULLOPTION/SELECTOR.vhf,-w,D:/Workers/Xilinx/ALU_FULLOPTION/SELECTOR.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,D:/Workers/Xilinx/ALU_FULLOPTION/OPERATE.vhf,-w,D:/Workers/Xilinx/ALU_FULLOPTION/OPERATE.sch

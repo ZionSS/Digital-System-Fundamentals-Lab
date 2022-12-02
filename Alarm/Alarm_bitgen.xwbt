@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Workers\Xilinx\Alarm\Alarm.ncd
+OUTFILE=D:\Workers\Xilinx\Alarm\Alarm.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=D:\Workers\Xilinx\Alarm
+LICENSE=WebPack
+USER_INFO=__0_0_0

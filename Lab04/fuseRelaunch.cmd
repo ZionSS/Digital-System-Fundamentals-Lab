@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Workers/Xilinx/Lab04/HalfAdder_HalfAdder_sch_tb_isim_beh.exe" -prj "D:/Workers/Xilinx/Lab04/HalfAdder_HalfAdder_sch_tb_beh.prj" "work.HalfAdder_HalfAdder_sch_tb" "work.glbl" 

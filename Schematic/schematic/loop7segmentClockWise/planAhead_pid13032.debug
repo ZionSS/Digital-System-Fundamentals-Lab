@@ -1,0 +1,72 @@
+#-------------------------------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Current time: 11/25/19 11:00:34 AM
+# Process ID: 13032
+# Platform: Windows
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx
+# Technical Support with this file and a testcase attached.
+#-------------------------------------------------------------------------------
+11/25/19 11:00:34 AM
+ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+
+	at ui.h.e.CF(SourceFile:217)
+	at ui.h.I.CF(SourceFile:702)
+	at ui.frmwork.HTclEventBroker.a(SourceFile:368)
+	at ui.frmwork.HTclEventBroker.bb(SourceFile:354)
+	at ui.project.a.een(SourceFile:759)
+	at ui.project.a.cleanup(SourceFile:608)
+	at ui.project.r.cleanup(SourceFile:631)
+	at ui.PlanAhead.aJj(SourceFile:335)
+	at ui.PlanAhead.a(SourceFile:1192)
+	at ui.frmwork.a.i.c(SourceFile:35)
+	at ui.frmwork.HTclEventBroker.a(SourceFile:233)
+	at ui.frmwork.HTclEventBroker.fireTclEvent(SourceFile:325)
+	at ui.frmwork.tcltasksi.task_manager_eval_in_tcl_or_bad_alloc(Native Method)
+	at ui.e.gY(SourceFile:195)
+	at ui.bl.run(SourceFile:882)
+	at ui.cd.run(SourceFile:1821)
+	at ui.views.F.aw.a(SourceFile:341)
+	at ui.cd.b(SourceFile:1809)
+	at ui.cd.a(SourceFile:1784)
+	at ui.PlanAhead.a(SourceFile:778)
+	at ui.aL.c(SourceFile:885)
+	at ui.aL.aHs(SourceFile:824)
+	at ui.bk.windowClosing(SourceFile:503)
+	at java.awt.AWTEventMulticaster.windowClosing(Unknown Source)
+	at java.awt.AWTEventMulticaster.windowClosing(Unknown Source)
+	at java.awt.AWTEventMulticaster.windowClosing(Unknown Source)
+	at java.awt.Window.processWindowEvent(Unknown Source)
+	at javax.swing.JFrame.processWindowEvent(Unknown Source)
+	at java.awt.Window.processEvent(Unknown Source)
+	at ui.aL.processEvent(SourceFile:1214)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at ui.frmwork.a.e.dispatchEvent(SourceFile:73)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+

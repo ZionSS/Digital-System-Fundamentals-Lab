@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -verilog to_1_2_10_100_1000Hz_drc.vf -w D:/Workers/Schematic/to_1_2_10_100_1000Hz.sch 
+sch2sym -intstyle ise -family spartan6 -refsym to_1_2_10_100_1000Hz D:/Workers/Schematic/to_1_2_10_100_1000Hz.sch D:/Workers/Xilinx/CountEven/to_1_2_10_100_1000Hz.sym 

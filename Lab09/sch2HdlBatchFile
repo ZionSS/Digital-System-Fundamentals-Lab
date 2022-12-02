@@ -1,0 +1,16 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/Workers/Xilinx/Lab09/BCD_0_F_Decoder.vf,-w,D:/Workers/Xilinx/Lab09/BCD_0_F_Decoder.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/Workers/Xilinx/Lab09/diviser_100K.vf,-w,D:/Workers/Xilinx/Lab09/diviser_100K.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/Workers/Xilinx/Lab09/diviser_10.vf,-w,D:/Workers/Xilinx/Lab09/diviser_10.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/Workers/Xilinx/Lab09/diviser_2.vf,-w,D:/Workers/Xilinx/Lab09/diviser_2.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/Workers/Xilinx/Lab09/diviser_5.vf,-w,D:/Workers/Xilinx/Lab09/diviser_5.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/Workers/Xilinx/Lab09/SELECTOR.vf,-w,D:/Workers/Xilinx/Lab09/SELECTOR.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/Workers/Xilinx/Lab09/OPERATE.vf,-w,D:/Workers/Xilinx/Lab09/OPERATE.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/Workers/Xilinx/Lab09/SUB.vf,-w,D:/Workers/Xilinx/Lab09/SUB.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/Workers/Xilinx/Lab09/ADD.vf,-w,D:/Workers/Xilinx/Lab09/ADD.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/Workers/Xilinx/Lab09/ExOr.vf,-w,D:/Workers/Xilinx/Lab09/ExOr.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/Workers/Xilinx/Lab09/SHIFTBIT.vf,-w,D:/Workers/Xilinx/Lab09/SHIFTBIT.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/Workers/Xilinx/Lab09/ALU.vf,-w,D:/Workers/Xilinx/Lab09/ALU.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/Workers/Xilinx/Lab09/diviser_100K.vf,-w,D:/Workers/Xilinx/Lab09/diviser_100K.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/Workers/Xilinx/Lab09/diviser_10.vf,-w,D:/Workers/Xilinx/Lab09/diviser_10.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/Workers/Xilinx/Lab09/OPERATE.vf,-w,D:/Workers/Xilinx/Lab09/OPERATE.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/Workers/Xilinx/Lab09/ALU.vf,-w,D:/Workers/Xilinx/Lab09/ALU.sch

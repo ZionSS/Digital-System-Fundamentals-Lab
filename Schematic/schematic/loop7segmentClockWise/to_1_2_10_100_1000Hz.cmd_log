@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym to_1_2_10_100_1000Hz C:/Users/Werawit/Desktop/schematic/counter/to_1_2_10_100_1000Hz.sch E:/Programs/ISE/preTest/to_1_2_10_100_1000Hz.sym 

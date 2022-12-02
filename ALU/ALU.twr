@@ -1,0 +1,195 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\ProgramData\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise
+-v 3 -s 3 -n 3 -fastpaths -xml ALU.twx ALU.ncd -o ALU.twr ALU.pcf -ucf ALU.ucf
+
+Design file:              ALU.ncd
+Physical constraint file: ALU.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock XLXN_80 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+S<0>        |        10.053(R)|      SLOW  |         5.524(R)|      FAST  |XLXN_80_BUFGP     |   0.000|
+S<1>        |         9.943(R)|      SLOW  |         5.438(R)|      FAST  |XLXN_80_BUFGP     |   0.000|
+SEVSEG<0>   |        15.492(R)|      SLOW  |         7.940(R)|      FAST  |XLXN_80_BUFGP     |   0.000|
+SEVSEG<1>   |        15.620(R)|      SLOW  |         7.835(R)|      FAST  |XLXN_80_BUFGP     |   0.000|
+SEVSEG<2>   |        15.404(R)|      SLOW  |         7.756(R)|      FAST  |XLXN_80_BUFGP     |   0.000|
+SEVSEG<3>   |        15.479(R)|      SLOW  |         7.716(R)|      FAST  |XLXN_80_BUFGP     |   0.000|
+SEVSEG<4>   |        15.360(R)|      SLOW  |         7.672(R)|      FAST  |XLXN_80_BUFGP     |   0.000|
+SEVSEG<5>   |        15.102(R)|      SLOW  |         7.551(R)|      FAST  |XLXN_80_BUFGP     |   0.000|
+SEVSEG<6>   |        15.280(R)|      SLOW  |         7.563(R)|      FAST  |XLXN_80_BUFGP     |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock OSC
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+OSC            |         |         |         |    0.872|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXN_80
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+XLXN_80        |    1.264|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |SEVSEG<0>      |   14.210|
+A<0>           |SEVSEG<1>      |   14.338|
+A<0>           |SEVSEG<2>      |   13.997|
+A<0>           |SEVSEG<3>      |   14.197|
+A<0>           |SEVSEG<4>      |   13.911|
+A<0>           |SEVSEG<5>      |   13.636|
+A<0>           |SEVSEG<6>      |   13.812|
+A<1>           |SEVSEG<0>      |   14.329|
+A<1>           |SEVSEG<1>      |   14.457|
+A<1>           |SEVSEG<2>      |   14.116|
+A<1>           |SEVSEG<3>      |   14.316|
+A<1>           |SEVSEG<4>      |   14.030|
+A<1>           |SEVSEG<5>      |   13.608|
+A<1>           |SEVSEG<6>      |   13.931|
+A<2>           |SEVSEG<0>      |   14.459|
+A<2>           |SEVSEG<1>      |   14.587|
+A<2>           |SEVSEG<2>      |   14.246|
+A<2>           |SEVSEG<3>      |   14.446|
+A<2>           |SEVSEG<4>      |   14.160|
+A<2>           |SEVSEG<5>      |   13.831|
+A<2>           |SEVSEG<6>      |   14.061|
+A<3>           |SEVSEG<0>      |   13.621|
+A<3>           |SEVSEG<1>      |   13.749|
+A<3>           |SEVSEG<2>      |   13.484|
+A<3>           |SEVSEG<3>      |   13.608|
+A<3>           |SEVSEG<4>      |   13.440|
+A<3>           |SEVSEG<5>      |   13.194|
+A<3>           |SEVSEG<6>      |   13.360|
+A<4>           |SEVSEG<0>      |   14.001|
+A<4>           |SEVSEG<1>      |   14.129|
+A<4>           |SEVSEG<2>      |   13.788|
+A<4>           |SEVSEG<3>      |   13.988|
+A<4>           |SEVSEG<4>      |   13.724|
+A<4>           |SEVSEG<5>      |   13.557|
+A<4>           |SEVSEG<6>      |   13.644|
+A<5>           |SEVSEG<0>      |   14.031|
+A<5>           |SEVSEG<1>      |   14.159|
+A<5>           |SEVSEG<2>      |   13.818|
+A<5>           |SEVSEG<3>      |   14.018|
+A<5>           |SEVSEG<4>      |   13.732|
+A<5>           |SEVSEG<5>      |   13.302|
+A<5>           |SEVSEG<6>      |   13.550|
+A<6>           |SEVSEG<0>      |   13.884|
+A<6>           |SEVSEG<1>      |   14.012|
+A<6>           |SEVSEG<2>      |   13.671|
+A<6>           |SEVSEG<3>      |   13.871|
+A<6>           |SEVSEG<4>      |   13.585|
+A<6>           |SEVSEG<5>      |   13.155|
+A<6>           |SEVSEG<6>      |   13.403|
+A<7>           |SEVSEG<0>      |   13.959|
+A<7>           |SEVSEG<1>      |   14.087|
+A<7>           |SEVSEG<2>      |   13.746|
+A<7>           |SEVSEG<3>      |   13.946|
+A<7>           |SEVSEG<4>      |   13.660|
+A<7>           |SEVSEG<5>      |   13.230|
+A<7>           |SEVSEG<6>      |   13.478|
+B<0>           |SEVSEG<0>      |   14.587|
+B<0>           |SEVSEG<1>      |   14.715|
+B<0>           |SEVSEG<2>      |   14.374|
+B<0>           |SEVSEG<3>      |   14.574|
+B<0>           |SEVSEG<4>      |   14.288|
+B<0>           |SEVSEG<5>      |   13.866|
+B<0>           |SEVSEG<6>      |   14.189|
+B<1>           |SEVSEG<0>      |   14.493|
+B<1>           |SEVSEG<1>      |   14.621|
+B<1>           |SEVSEG<2>      |   14.280|
+B<1>           |SEVSEG<3>      |   14.480|
+B<1>           |SEVSEG<4>      |   14.194|
+B<1>           |SEVSEG<5>      |   13.943|
+B<1>           |SEVSEG<6>      |   14.109|
+B<2>           |SEVSEG<0>      |   14.368|
+B<2>           |SEVSEG<1>      |   14.496|
+B<2>           |SEVSEG<2>      |   14.155|
+B<2>           |SEVSEG<3>      |   14.355|
+B<2>           |SEVSEG<4>      |   14.069|
+B<2>           |SEVSEG<5>      |   13.685|
+B<2>           |SEVSEG<6>      |   13.970|
+B<3>           |SEVSEG<0>      |   14.360|
+B<3>           |SEVSEG<1>      |   14.488|
+B<3>           |SEVSEG<2>      |   14.147|
+B<3>           |SEVSEG<3>      |   14.347|
+B<3>           |SEVSEG<4>      |   14.061|
+B<3>           |SEVSEG<5>      |   13.683|
+B<3>           |SEVSEG<6>      |   13.962|
+B<4>           |SEVSEG<0>      |   14.559|
+B<4>           |SEVSEG<1>      |   14.687|
+B<4>           |SEVSEG<2>      |   14.346|
+B<4>           |SEVSEG<3>      |   14.546|
+B<4>           |SEVSEG<4>      |   14.282|
+B<4>           |SEVSEG<5>      |   14.115|
+B<4>           |SEVSEG<6>      |   14.202|
+B<5>           |SEVSEG<0>      |   14.636|
+B<5>           |SEVSEG<1>      |   14.764|
+B<5>           |SEVSEG<2>      |   14.423|
+B<5>           |SEVSEG<3>      |   14.623|
+B<5>           |SEVSEG<4>      |   14.337|
+B<5>           |SEVSEG<5>      |   14.057|
+B<5>           |SEVSEG<6>      |   14.155|
+B<6>           |SEVSEG<0>      |   14.736|
+B<6>           |SEVSEG<1>      |   14.864|
+B<6>           |SEVSEG<2>      |   14.523|
+B<6>           |SEVSEG<3>      |   14.723|
+B<6>           |SEVSEG<4>      |   14.437|
+B<6>           |SEVSEG<5>      |   14.007|
+B<6>           |SEVSEG<6>      |   14.255|
+B<7>           |SEVSEG<0>      |   14.735|
+B<7>           |SEVSEG<1>      |   14.863|
+B<7>           |SEVSEG<2>      |   14.522|
+B<7>           |SEVSEG<3>      |   14.722|
+B<7>           |SEVSEG<4>      |   14.436|
+B<7>           |SEVSEG<5>      |   14.006|
+B<7>           |SEVSEG<6>      |   14.254|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Nov 17 14:27:04 2021 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4572 MB
+
+
+

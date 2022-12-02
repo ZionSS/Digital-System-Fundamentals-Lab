@@ -1,0 +1,65 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Alarm.vf
+// /___/   /\     Timestamp : 11/23/2021 09:55:21
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/Workers/Xilinx/Alarm/Alarm.vf -w D:/Workers/Xilinx/Alarm/Alarm.sch
+//Design Name: Alarm
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Alarm(SW5, 
+             SW6, 
+             SW7, 
+             L0);
+
+    input SW5;
+    input SW6;
+    input SW7;
+   output L0;
+   
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_14;
+   wire XLXN_15;
+   wire XLXN_17;
+   
+   AND3  XLXI_1 (.I0(XLXN_7), 
+                .I1(XLXN_6), 
+                .I2(SW7), 
+                .O(XLXN_14));
+   AND3  XLXI_2 (.I0(XLXN_8), 
+                .I1(SW6), 
+                .I2(SW7), 
+                .O(XLXN_15));
+   AND3  XLXI_3 (.I0(SW5), 
+                .I1(SW6), 
+                .I2(XLXN_9), 
+                .O(XLXN_17));
+   INV  XLXI_4 (.I(SW6), 
+               .O(XLXN_6));
+   INV  XLXI_5 (.I(SW5), 
+               .O(XLXN_7));
+   INV  XLXI_6 (.I(SW5), 
+               .O(XLXN_8));
+   INV  XLXI_7 (.I(SW7), 
+               .O(XLXN_9));
+   OR3  XLXI_8 (.I0(XLXN_17), 
+               .I1(XLXN_15), 
+               .I2(XLXN_14), 
+               .O(L0));
+endmodule

@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -refsym SHIFTBIT D:/Workers/Xilinx/Lab09/SHIFTBIT.sch D:/Workers/Xilinx/Lab09/SHIFTBIT.sym 
+sch2sym -intstyle ise -family spartan6 -refsym SHIFTBIT D:/Workers/Xilinx/Lab09/SHIFTBIT.sch D:/Workers/Xilinx/Lab09/SHIFTBIT.sym 

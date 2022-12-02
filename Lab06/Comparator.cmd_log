@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym Comparator D:/Workers/Xilinx/Lab06/Comparator.sch D:/Workers/Xilinx/Lab06/Comparator.sym 

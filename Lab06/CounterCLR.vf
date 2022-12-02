@@ -1,0 +1,129 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : CounterCLR.vf
+// /___/   /\     Timestamp : 09/21/2021 03:01:20
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/Workers/Xilinx/Lab06/CounterCLR.vf -w D:/Workers/Xilinx/Lab06/CounterCLR.sch
+//Design Name: CounterCLR
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_CounterCLR(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module CounterCLR(CLK, 
+                  CLR, 
+                  Q0, 
+                  Q1, 
+                  Q2, 
+                  Q3);
+
+    input CLK;
+    input CLR;
+   output Q0;
+   output Q1;
+   output Q2;
+   output Q3;
+   
+   wire XLXN_1;
+   wire XLXN_28;
+   wire XLXN_35;
+   wire XLXN_48;
+   wire XLXN_53;
+   wire XLXN_240;
+   wire Q0_DUMMY;
+   wire Q1_DUMMY;
+   wire Q2_DUMMY;
+   wire Q3_DUMMY;
+   
+   assign Q0 = Q0_DUMMY;
+   assign Q1 = Q1_DUMMY;
+   assign Q2 = Q2_DUMMY;
+   assign Q3 = Q3_DUMMY;
+   (* HU_SET = "XLXI_1_4" *) 
+   FJKC_HXILINX_CounterCLR  XLXI_1 (.C(CLK), 
+                                   .CLR(CLR), 
+                                   .J(XLXN_1), 
+                                   .K(XLXN_1), 
+                                   .Q(Q3_DUMMY));
+   VCC  XLXI_2 (.P(XLXN_1));
+   (* HU_SET = "XLXI_3_6" *) 
+   FJKC_HXILINX_CounterCLR  XLXI_3 (.C(CLK), 
+                                   .CLR(CLR), 
+                                   .J(XLXN_35), 
+                                   .K(Q3_DUMMY), 
+                                   .Q(Q2_DUMMY));
+   (* HU_SET = "XLXI_4_5" *) 
+   FJKC_HXILINX_CounterCLR  XLXI_4 (.C(CLK), 
+                                   .CLR(CLR), 
+                                   .J(XLXN_48), 
+                                   .K(XLXN_28), 
+                                   .Q(Q1_DUMMY));
+   AND2  XLXI_21 (.I0(Q2_DUMMY), 
+                 .I1(Q3_DUMMY), 
+                 .O(XLXN_48));
+   AND2  XLXI_22 (.I0(Q2_DUMMY), 
+                 .I1(Q3_DUMMY), 
+                 .O(XLXN_28));
+   AND3  XLXI_24 (.I0(Q1_DUMMY), 
+                 .I1(Q2_DUMMY), 
+                 .I2(Q3_DUMMY), 
+                 .O(XLXN_53));
+   AND2  XLXI_141 (.I0(Q3_DUMMY), 
+                  .I1(XLXN_240), 
+                  .O(XLXN_35));
+   INV  XLXI_142 (.I(Q0_DUMMY), 
+                 .O(XLXN_240));
+   (* HU_SET = "XLXI_143_7" *) 
+   FJKC_HXILINX_CounterCLR  XLXI_143 (.C(CLK), 
+                                     .CLR(CLR), 
+                                     .J(XLXN_53), 
+                                     .K(Q3_DUMMY), 
+                                     .Q(Q0_DUMMY));
+endmodule

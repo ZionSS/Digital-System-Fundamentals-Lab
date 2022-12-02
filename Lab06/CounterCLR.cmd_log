@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym CounterCLR D:/Workers/Xilinx/Lab06/CounterCLR.sch D:/Workers/Xilinx/Lab06/CounterCLR.sym 

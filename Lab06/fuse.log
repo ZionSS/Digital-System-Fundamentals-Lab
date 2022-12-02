@@ -1,0 +1,36 @@
+Running: D:\ProgramData\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/Workers/Xilinx/Lab06/Lab06_Schematic_Lab06_Schematic_sch_tb_isim_beh.exe -prj D:/Workers/Xilinx/Lab06/Lab06_Schematic_Lab06_Schematic_sch_tb_beh.prj work.Lab06_Schematic_Lab06_Schematic_sch_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/Workers/Xilinx/Lab06/CounterCLR.vf" into library work
+Analyzing Verilog file "D:/Workers/Xilinx/Lab06/Comparator.vf" into library work
+Analyzing Verilog file "D:/Workers/Xilinx/Lab06/BCD_Fix.vf" into library work
+Analyzing Verilog file "D:/Workers/Xilinx/Lab06/Lab06_Schematic.vf" into library work
+Analyzing Verilog file "D:/Workers/Xilinx/Lab06/Lab06_Verilog.v" into library work
+Analyzing Verilog file "D:/ProgramData/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module AND2
+Compiling module INV
+Compiling module OR4
+Compiling module OR3
+Compiling module AND3
+Compiling module OR5
+Compiling module OR2
+Compiling module BCD_Fix
+Compiling module FJKC_HXILINX_Lab06_Schematic
+Compiling module VCC
+Compiling module CounterCLR_MUSER_Lab06_Schematic
+Compiling module XOR2
+Compiling module AND4B4
+Compiling module Comparator_MUSER_Lab06_Schematic
+Compiling module Lab06_Schematic
+Compiling module Lab06_Schematic_Lab06_Schematic_...
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 17 Verilog Units
+Built simulation executable D:/Workers/Xilinx/Lab06/Lab06_Schematic_Lab06_Schematic_sch_tb_isim_beh.exe
+Fuse Memory Usage: 28460 KB
+Fuse CPU Usage: 405 ms

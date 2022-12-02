@@ -1,0 +1,3 @@
+sch2hdl -intstyle ise -family spartan6 -verilog Counter_drc.vf -w D:/Workers/Schematic/Counter.sch 
+sch2sym -intstyle ise -family spartan6 -refsym Counter D:/Workers/Schematic/Counter.sch D:/Workers/Xilinx/Test/Counter.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter D:/Workers/Schematic/Counter.sch D:/Workers/Xilinx/Test/Counter.sym 

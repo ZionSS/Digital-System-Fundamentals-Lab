@@ -1,0 +1,5 @@
+verilog work "encoder.vf"
+verilog work "loopSeg.vf"
+verilog work "to_1_2_10_100_1000Hz.vf"
+verilog work "counter011.vf"
+verilog work "main2.vf"

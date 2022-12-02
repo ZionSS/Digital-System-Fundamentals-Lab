@@ -1,0 +1,4 @@
+sch2sym -intstyle ise -family spartan6 -refsym SUB D:/Workers/Xilinx/Lab09/SUB.sch D:/Workers/Xilinx/Lab09/SUB.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog SUB_drc.vf -w D:/Workers/Xilinx/Lab09/SUB.sch 
+sch2sym -intstyle ise -family spartan6 -refsym SUB D:/Workers/Xilinx/Lab09/SUB.sch D:/Workers/Xilinx/Lab09/SUB.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym SUB D:/Workers/Xilinx/Lab09/SUB.sch D:/Workers/Xilinx/Lab09/SUB.sym 

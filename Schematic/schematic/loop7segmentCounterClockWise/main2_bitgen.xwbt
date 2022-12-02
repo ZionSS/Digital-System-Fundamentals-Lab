@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\Programs\ISE\preTest\main2.ncd
+OUTFILE=E:\Programs\ISE\preTest\main2.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=E:\Programs\ISE\preTest
+LICENSE=WebPack
+USER_INFO=__0_0_0

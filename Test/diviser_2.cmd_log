@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -verilog diviser_2_drc.vf -w D:/Workers/Xilinx/ALU/diviser_2.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym diviser_2 D:/Workers/Xilinx/ALU/diviser_2.sch D:/Workers/Xilinx/Test/diviser_2.sym 

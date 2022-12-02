@@ -1,0 +1,8 @@
+verilog work "diviser_5.vf"
+verilog work "diviser_2.vf"
+verilog work "diviser_10.vf"
+verilog work "Comparator.vf"
+verilog work "diviser_100K.vf"
+verilog work "NewBcdTo7Seg.vf"
+verilog work "Counter.vf"
+verilog work "clock.vf"

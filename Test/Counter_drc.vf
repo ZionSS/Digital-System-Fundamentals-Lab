@@ -1,0 +1,122 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Counter_drc.vf
+// /___/   /\     Timestamp : 11/23/2021 01:30:49
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: D:\ProgramData\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog Counter_drc.vf -w D:/Workers/Schematic/Counter.sch
+//Design Name: Counter
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_Counter(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module Counter(CLOCK, 
+               A_LSB1, 
+               B, 
+               C, 
+               D_MSB, 
+               TC);
+
+    input CLOCK;
+   output A_LSB1;
+   output B;
+   output C;
+   output D_MSB;
+   output TC;
+   
+   wire wtf02;
+   wire XLXN_29;
+   wire XLXN_31;
+   wire B_DUMMY;
+   wire C_DUMMY;
+   wire A_LSB1_DUMMY;
+   wire D_MSB_DUMMY;
+   wire TC_DUMMY;
+   
+   assign A_LSB1 = A_LSB1_DUMMY;
+   assign B = B_DUMMY;
+   assign C = C_DUMMY;
+   assign D_MSB = D_MSB_DUMMY;
+   assign TC = TC_DUMMY;
+   (* HU_SET = "XLXI_24_0" *) 
+   FJKC_HXILINX_Counter  XLXI_24 (.C(CLOCK), 
+                                 .CLR(TC_DUMMY), 
+                                 .J(wtf02), 
+                                 .K(wtf02), 
+                                 .Q(A_LSB1_DUMMY));
+   (* HU_SET = "XLXI_25_1" *) 
+   FJKC_HXILINX_Counter  XLXI_25 (.C(CLOCK), 
+                                 .CLR(TC_DUMMY), 
+                                 .J(A_LSB1_DUMMY), 
+                                 .K(A_LSB1_DUMMY), 
+                                 .Q(B_DUMMY));
+   (* HU_SET = "XLXI_26_2" *) 
+   FJKC_HXILINX_Counter  XLXI_26 (.C(CLOCK), 
+                                 .CLR(TC_DUMMY), 
+                                 .J(XLXN_29), 
+                                 .K(XLXN_29), 
+                                 .Q(C_DUMMY));
+   (* HU_SET = "XLXI_27_3" *) 
+   FJKC_HXILINX_Counter  XLXI_27 (.C(CLOCK), 
+                                 .CLR(TC_DUMMY), 
+                                 .J(XLXN_31), 
+                                 .K(XLXN_31), 
+                                 .Q(D_MSB_DUMMY));
+   AND2  XLXI_37 (.I0(B_DUMMY), 
+                 .I1(D_MSB_DUMMY), 
+                 .O(TC_DUMMY));
+   AND2  XLXI_38 (.I0(A_LSB1_DUMMY), 
+                 .I1(B_DUMMY), 
+                 .O(XLXN_29));
+   AND2  XLXI_39 (.I0(XLXN_29), 
+                 .I1(C_DUMMY), 
+                 .O(XLXN_31));
+   VCC  XLXI_40 (.P(wtf02));
+endmodule

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Tue Nov 23 09:55:27 2021
+# Process ID: 17268
+# Log file: D:/Workers/Xilinx/Alarm/planAhead_run_1/planAhead.log
+# Journal file: D:/Workers/Xilinx/Alarm/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/Workers/Xilinx/Alarm/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P82 [get_ports L0]
+endgroup
+startgroup
+set_property package_pin P57 [get_ports SW5]
+endgroup
+startgroup
+set_property package_pin P56 [get_ports SW6]
+endgroup
+startgroup
+set_property package_pin P55 [get_ports SW7]
+endgroup
+save_constraints

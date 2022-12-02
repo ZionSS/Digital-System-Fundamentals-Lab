@@ -1,0 +1,75 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : SUB.vf
+// /___/   /\     Timestamp : 11/14/2021 16:43:21
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/Workers/Xilinx/Lab09/SUB.vf -w D:/Workers/Xilinx/Lab09/SUB.sch
+//Design Name: SUB
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module ADD8_HXILINX_SUB (CO, OFL, S, A, B, CI);
+
+
+   output 	      CO;
+   output 	      OFL;
+   output [7:0]       S;
+
+   input  [7:0]       A;
+   input  [7:0]       B;
+   input              CI;
+
+   assign   {CO, S} = A + B + CI;
+   assign   OFL     = ( A[7] & B[7] & (~S[7])) | ((~A[7]) & (~B[7]) & S[7]);
+
+endmodule
+`timescale  100 ps / 10 ps
+
+module INV8_HXILINX_SUB (O, I);
+    
+
+   output [7:0] O;
+
+   input  [7:0] I;
+
+assign O = ~I;
+endmodule
+`timescale 1ns / 1ps
+
+module SUB(A, 
+           B, 
+           S);
+
+    input [7:0] A;
+    input [7:0] B;
+   output [7:0] S;
+   
+   wire [7:0] XLXN_3;
+   wire XLXN_5;
+   wire XLXN_6;
+   
+   (* HU_SET = "XLXI_1_8" *) 
+   ADD8_HXILINX_SUB  XLXI_1 (.A(A[7:0]), 
+                            .B(XLXN_3[7:0]), 
+                            .CI(XLXN_5), 
+                            .CO(XLXN_6), 
+                            .OFL(XLXN_6), 
+                            .S(S[7:0]));
+   (* HU_SET = "XLXI_2_9" *) 
+   INV8_HXILINX_SUB  XLXI_2 (.I(B[7:0]), 
+                            .O(XLXN_3[7:0]));
+   VCC  XLXI_3 (.P(XLXN_5));
+   GND  XLXI_4 (.G(XLXN_6));
+endmodule

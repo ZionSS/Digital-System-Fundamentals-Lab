@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -refsym SELECTOR D:/Workers/Xilinx/Lab09/SELECTOR.sch D:/Workers/Xilinx/Lab09/SELECTOR.sym 
+sch2sym -intstyle ise -family spartan6 -refsym SELECTOR D:/Workers/Xilinx/Lab09/SELECTOR.sch D:/Workers/Xilinx/Lab09/SELECTOR.sym 

@@ -1,0 +1,4 @@
+20 000 000 / x = want 
+x = 20 000 000 / want
+>>> x /= 2                    ---rising_edge and --falling_edge
+>>> cvt to hex

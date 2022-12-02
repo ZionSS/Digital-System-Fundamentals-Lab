@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -refsym diviser_5 D:/Workers/Xilinx/Lab09/diviser_5.sch D:/Workers/Xilinx/Lab09/diviser_5.sym 
+sch2sym -intstyle ise -family spartan6 -refsym diviser_5 D:/Workers/Xilinx/Lab09/diviser_5.sch D:/Workers/Xilinx/Lab09/diviser_5.sym 

@@ -1,0 +1,5 @@
+MODULE diviser_10
+	SUBMODULE diviser_2
+		INSTANCE XLXI_1
+	SUBMODULE diviser_5
+		INSTANCE XLXI_2

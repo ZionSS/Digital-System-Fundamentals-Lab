@@ -1,0 +1,14 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun Nov 14 16:40:48 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "comm_3" LOCATE = SITE "P30" LEVEL 1;
+COMP "XLXN_80" LOCATE = SITE "P47" LEVEL 1;
+PIN XLXN_80_pin<0> = BEL "XLXN_80" PINNAME PAD;
+PIN "XLXN_80_pin<0>" CLOCK_DEDICATED_ROUTE;
+COMP "OSC" LOCATE = SITE "P123" LEVEL 1;
+COMP "comm_0" LOCATE = SITE "P44" LEVEL 1;
+COMP "comm_1" LOCATE = SITE "P43" LEVEL 1;
+SCHEMATIC END;
+

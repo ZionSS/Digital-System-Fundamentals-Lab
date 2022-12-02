@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Workers\Xilinx\truthtable\curcuit.ncd
+OUTFILE=D:\Workers\Xilinx\truthtable\curcuit.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=D:\Workers\Xilinx\truthtable
+LICENSE=WebPack
+USER_INFO=__0_0_0

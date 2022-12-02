@@ -1,0 +1,62 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : diviser_5_drc.vf
+// /___/   /\     Timestamp : 11/23/2021 01:55:19
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: D:\ProgramData\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog diviser_5_drc.vf -w D:/Workers/Xilinx/ALU/diviser_5.sch
+//Design Name: diviser_5
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module diviser_5(CLK_IN, 
+                 CLK_OUT);
+
+    input CLK_IN;
+   output CLK_OUT;
+   
+   wire XLXN_4;
+   wire XLXN_7;
+   wire XLXN_10;
+   wire XLXN_12;
+   wire XLXN_14;
+   wire XLXN_16;
+   wire XLXN_17;
+   wire CLK_OUT_DUMMY;
+   
+   assign CLK_OUT = CLK_OUT_DUMMY;
+   FDC  XLXI_8 (.C(XLXN_17), 
+               .CLR(XLXN_7), 
+               .D(XLXN_4), 
+               .Q(XLXN_10));
+   FDC  XLXI_9 (.C(XLXN_4), 
+               .CLR(XLXN_7), 
+               .D(XLXN_16), 
+               .Q(XLXN_14));
+   FDC  XLXI_10 (.C(XLXN_16), 
+                .CLR(XLXN_7), 
+                .D(XLXN_12), 
+                .Q(CLK_OUT_DUMMY));
+   AND2  XLXI_11 (.I0(CLK_OUT_DUMMY), 
+                 .I1(XLXN_10), 
+                 .O(XLXN_7));
+   INV  XLXI_12 (.I(XLXN_10), 
+                .O(XLXN_4));
+   INV  XLXI_13 (.I(XLXN_14), 
+                .O(XLXN_16));
+   INV  XLXI_14 (.I(CLK_OUT_DUMMY), 
+                .O(XLXN_12));
+   INV  XLXI_15 (.I(CLK_IN), 
+                .O(XLXN_17));
+endmodule

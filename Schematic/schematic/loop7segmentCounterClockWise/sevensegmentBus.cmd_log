@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym sevensegmentBus E:/Programs/ISE/lab5/sevensegmentBus.sch E:/Programs/ISE/preTest/sevensegmentBus.sym 

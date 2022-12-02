@@ -1,0 +1,3 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,E:/Programs/ISE/preTest/main2.vf,-w,E:/Programs/ISE/preTest/main2.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,E:/Programs/ISE/preTest/loopSeg.vf,-w,C:/Users/Werawit/Desktop/schematic/loopSeg.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,E:/Programs/ISE/preTest/main2.vf,-w,E:/Programs/ISE/preTest/main2.sch

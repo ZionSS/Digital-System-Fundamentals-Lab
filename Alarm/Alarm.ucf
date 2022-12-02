@@ -1,0 +1,7 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "L0" LOC = P82;
+NET "SW5" LOC = P57;
+NET "SW6" LOC = P56;
+NET "SW7" LOC = P55;

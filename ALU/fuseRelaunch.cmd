@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/Workers/Xilinx/ALU/ALU_isim_beh.exe" -prj "D:/Workers/Xilinx/ALU/ALU_beh.prj" "work.ALU" 

@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -refsym BCD_0_F_Decoder D:/Workers/Xilinx/Lab09/BCD_0_F_Decoder.sch D:/Workers/Xilinx/Lab09/BCD_0_F_Decoder.sym 
+sch2sym -intstyle ise -family spartan6 -refsym BCD_0_F_Decoder D:/Workers/Xilinx/Lab09/BCD_0_F_Decoder.sch D:/Workers/Xilinx/Lab09/BCD_0_F_Decoder.sym 

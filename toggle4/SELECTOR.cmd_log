@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -verilog SELECTOR_drc.vf -w D:/Workers/Xilinx/ALU/SELECTOR.sch 
+sch2sym -intstyle ise -family spartan6 -refsym SELECTOR D:/Workers/Xilinx/ALU/SELECTOR.sch D:/Workers/Xilinx/toggle4/SELECTOR.sym 

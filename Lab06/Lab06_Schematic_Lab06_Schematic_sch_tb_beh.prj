@@ -1,0 +1,6 @@
+verilog work "CounterCLR.vf"
+verilog work "Comparator.vf"
+verilog work "BCD_Fix.vf"
+verilog work "Lab06_Schematic.vf"
+verilog work "Lab06_Verilog.v"
+verilog work "D:/ProgramData/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

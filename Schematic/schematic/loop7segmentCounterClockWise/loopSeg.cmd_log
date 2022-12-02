@@ -1,0 +1,4 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym loopSeg C:/Users/Werawit/Desktop/schematic/loopSeg.sch E:/Programs/ISE/preTest/loopSeg.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym loopSeg C:/Users/Werawit/Desktop/schematic/loopSeg.sch E:/Programs/ISE/preTest/loopSeg.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym loopSeg C:/Users/Werawit/Desktop/schematic/loopSeg.sch E:/Programs/ISE/preTest/loopSeg.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym loopSeg C:/Users/Werawit/Desktop/schematic/loopSeg.sch E:/Programs/ISE/preTest/loopSeg.sym 

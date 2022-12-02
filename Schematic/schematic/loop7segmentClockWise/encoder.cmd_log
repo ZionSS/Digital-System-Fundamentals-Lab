@@ -1,0 +1,11 @@
+sch2sym -intstyle ise -family spartan6 -refsym encoder E:/Programs/ISE/preTest/encoder.sch E:/Programs/ISE/preTest/encoder.sym 
+sch2sym -intstyle ise -family spartan6 -refsym encoder E:/Programs/ISE/preTest/encoder.sch E:/Programs/ISE/preTest/encoder.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym encoder E:/Programs/ISE/preTest/encoder.sch E:/Programs/ISE/preTest/encoder.sym 
+xst -intstyle ise -ifn "E:/Programs/ISE/preTest/encoder.xst" -ofn "E:/Programs/ISE/preTest/encoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc encoder.ucf -p xc6slx9-tqg144-3 encoder.ngc encoder.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encoder_map.ncd encoder.ngd encoder.pcf 
+par -w -intstyle ise -ol high -mt off encoder_map.ncd encoder.ncd encoder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml encoder.twx encoder.ncd -o encoder.twr encoder.pcf -ucf encoder.ucf 
+bitgen -intstyle ise -f encoder.ut encoder.ncd 
+sch2sym -intstyle ise -family spartan6 -w -refsym encoder E:/Programs/ISE/preTest/encoder.sch E:/Programs/ISE/preTest/encoder.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym encoder E:/Programs/ISE/preTest/encoder.sch E:/Programs/ISE/preTest/encoder.sym 

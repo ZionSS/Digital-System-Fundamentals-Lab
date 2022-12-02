@@ -1,0 +1,168 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\ProgramData\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise
+-v 3 -s 3 -n 3 -fastpaths -xml Lab06_Schematic.twx Lab06_Schematic.ncd -o
+Lab06_Schematic.twr Lab06_Schematic.pcf
+
+Design file:              Lab06_Schematic.ncd
+Physical constraint file: Lab06_Schematic.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLKA
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+CLR         |    0.223(R)|      SLOW  |    1.141(R)|      SLOW  |XLXN_415          |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock CLKB
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+CLR         |    0.186(R)|      SLOW  |    0.716(R)|      SLOW  |XLXN_414          |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock SW
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+CLR         |    0.004(R)|      FAST  |    1.118(R)|      SLOW  |XLXN_414          |   0.000|
+            |    0.345(R)|      SLOW  |    1.016(R)|      SLOW  |XLXN_415          |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock CLKA to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Aa          |         9.332(R)|      SLOW  |         4.997(R)|      FAST  |XLXN_415          |   0.000|
+Ab          |         9.724(R)|      SLOW  |         5.293(R)|      FAST  |XLXN_415          |   0.000|
+Ac          |         9.210(R)|      SLOW  |         4.882(R)|      FAST  |XLXN_415          |   0.000|
+Ad          |         9.853(R)|      SLOW  |         5.382(R)|      FAST  |XLXN_415          |   0.000|
+Ae          |         9.236(R)|      SLOW  |         4.889(R)|      FAST  |XLXN_415          |   0.000|
+Af          |         9.747(R)|      SLOW  |         5.259(R)|      FAST  |XLXN_415          |   0.000|
+Ag          |         9.069(R)|      SLOW  |         4.559(R)|      FAST  |XLXN_415          |   0.000|
+Buzzer      |         9.793(R)|      SLOW  |         4.874(R)|      FAST  |XLXN_415          |   0.000|
+Q0A         |         9.517(R)|      SLOW  |         5.765(R)|      FAST  |XLXN_415          |   0.000|
+Q1A         |         7.931(R)|      SLOW  |         4.628(R)|      FAST  |XLXN_415          |   0.000|
+Q2A         |         8.105(R)|      SLOW  |         4.724(R)|      FAST  |XLXN_415          |   0.000|
+Q3A         |         8.118(R)|      SLOW  |         4.746(R)|      FAST  |XLXN_415          |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock CLKB to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Ba          |         8.667(R)|      SLOW  |         4.707(R)|      FAST  |XLXN_414          |   0.000|
+Bb          |         8.574(R)|      SLOW  |         4.854(R)|      FAST  |XLXN_414          |   0.000|
+Bc          |         8.525(R)|      SLOW  |         4.863(R)|      FAST  |XLXN_414          |   0.000|
+Bd          |         9.619(R)|      SLOW  |         5.095(R)|      FAST  |XLXN_414          |   0.000|
+Be          |         8.677(R)|      SLOW  |         4.972(R)|      FAST  |XLXN_414          |   0.000|
+Bf          |         8.658(R)|      SLOW  |         4.796(R)|      FAST  |XLXN_414          |   0.000|
+Bg          |         9.487(R)|      SLOW  |         5.099(R)|      FAST  |XLXN_414          |   0.000|
+Buzzer      |         9.269(R)|      SLOW  |         4.788(R)|      FAST  |XLXN_414          |   0.000|
+Q0B         |         7.967(R)|      SLOW  |         4.820(R)|      FAST  |XLXN_414          |   0.000|
+Q1B         |         7.812(R)|      SLOW  |         4.612(R)|      FAST  |XLXN_414          |   0.000|
+Q2B         |         7.696(R)|      SLOW  |         4.548(R)|      FAST  |XLXN_414          |   0.000|
+Q3B         |         8.573(R)|      SLOW  |         5.137(R)|      FAST  |XLXN_414          |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock SW to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Aa          |         9.207(R)|      SLOW  |         4.878(R)|      FAST  |XLXN_415          |   0.000|
+Ab          |         9.599(R)|      SLOW  |         5.174(R)|      FAST  |XLXN_415          |   0.000|
+Ac          |         9.085(R)|      SLOW  |         4.763(R)|      FAST  |XLXN_415          |   0.000|
+Ad          |         9.728(R)|      SLOW  |         5.263(R)|      FAST  |XLXN_415          |   0.000|
+Ae          |         9.111(R)|      SLOW  |         4.770(R)|      FAST  |XLXN_415          |   0.000|
+Af          |         9.622(R)|      SLOW  |         5.140(R)|      FAST  |XLXN_415          |   0.000|
+Ag          |         8.944(R)|      SLOW  |         4.440(R)|      FAST  |XLXN_415          |   0.000|
+Ba          |         9.069(R)|      SLOW  |         4.779(R)|      FAST  |XLXN_414          |   0.000|
+Bb          |         8.976(R)|      SLOW  |         4.926(R)|      FAST  |XLXN_414          |   0.000|
+Bc          |         8.927(R)|      SLOW  |         4.935(R)|      FAST  |XLXN_414          |   0.000|
+Bd          |        10.021(R)|      SLOW  |         5.167(R)|      FAST  |XLXN_414          |   0.000|
+Be          |         9.079(R)|      SLOW  |         5.044(R)|      FAST  |XLXN_414          |   0.000|
+Bf          |         9.060(R)|      SLOW  |         4.868(R)|      FAST  |XLXN_414          |   0.000|
+Bg          |         9.889(R)|      SLOW  |         5.171(R)|      FAST  |XLXN_414          |   0.000|
+Buzzer      |         9.671(R)|      SLOW  |         4.860(R)|      FAST  |XLXN_414          |   0.000|
+            |         9.668(R)|      SLOW  |         4.755(R)|      FAST  |XLXN_415          |   0.000|
+Q0A         |         9.392(R)|      SLOW  |         5.646(R)|      FAST  |XLXN_415          |   0.000|
+Q0B         |         8.369(R)|      SLOW  |         4.892(R)|      FAST  |XLXN_414          |   0.000|
+Q1A         |         7.806(R)|      SLOW  |         4.509(R)|      FAST  |XLXN_415          |   0.000|
+Q1B         |         8.214(R)|      SLOW  |         4.684(R)|      FAST  |XLXN_414          |   0.000|
+Q2A         |         7.980(R)|      SLOW  |         4.605(R)|      FAST  |XLXN_415          |   0.000|
+Q2B         |         8.098(R)|      SLOW  |         4.620(R)|      FAST  |XLXN_414          |   0.000|
+Q3A         |         7.993(R)|      SLOW  |         4.627(R)|      FAST  |XLXN_415          |   0.000|
+Q3B         |         8.975(R)|      SLOW  |         5.209(R)|      FAST  |XLXN_414          |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLKA
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLKA           |    2.921|         |         |         |
+SW             |    2.921|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock CLKB
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLKB           |    2.350|         |         |         |
+SW             |    2.350|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SW
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLKA           |    2.921|         |         |         |
+CLKB           |    2.350|         |         |         |
+SW             |    2.921|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Sun Nov 14 14:19:10 2021 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4571 MB
+
+
+

@@ -1,0 +1,6 @@
+verilog isim_temp "CounterCLR.vf"
+verilog isim_temp "Comparator.vf"
+verilog isim_temp "BCD_Fix.vf"
+verilog isim_temp "Lab06_Schematic.vf"
+verilog isim_temp "Lab06_Verilog.v"
+verilog isim_temp "D:/ProgramData/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

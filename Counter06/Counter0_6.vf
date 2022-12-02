@@ -1,0 +1,117 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Counter0_6.vf
+// /___/   /\     Timestamp : 11/23/2021 05:36:01
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/Workers/Xilinx/Counter06/Counter0_6.vf -w D:/Workers/Xilinx/Counter06/Counter0_6.sch
+//Design Name: Counter0_6
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_Counter0_6(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module Counter0_6(CLK, 
+                  A, 
+                  B, 
+                  C);
+
+    input CLK;
+   output A;
+   output B;
+   output C;
+   
+   wire XLXN_2;
+   wire XLXN_9;
+   wire XLXN_22;
+   wire XLXN_23;
+   wire XLXN_25;
+   wire XLXN_26;
+   wire XLXN_27;
+   wire A_DUMMY;
+   wire B_DUMMY;
+   wire C_DUMMY;
+   
+   assign A = A_DUMMY;
+   assign B = B_DUMMY;
+   assign C = C_DUMMY;
+   (* HU_SET = "XLXI_1_0" *) 
+   FJKC_HXILINX_Counter0_6  XLXI_1 (.C(CLK), 
+                                   .CLR(XLXN_22), 
+                                   .J(XLXN_2), 
+                                   .K(B_DUMMY), 
+                                   .Q(C_DUMMY));
+   (* HU_SET = "XLXI_2_1" *) 
+   FJKC_HXILINX_Counter0_6  XLXI_2 (.C(CLK), 
+                                   .CLR(XLXN_22), 
+                                   .J(XLXN_25), 
+                                   .K(XLXN_23), 
+                                   .Q(A_DUMMY));
+   OR2  XLXI_4 (.I0(C_DUMMY), 
+               .I1(A_DUMMY), 
+               .O(XLXN_9));
+   AND2  XLXI_5 (.I0(B_DUMMY), 
+                .I1(A_DUMMY), 
+                .O(XLXN_2));
+   GND  XLXI_6 (.G(XLXN_22));
+   (* HU_SET = "XLXI_7_2" *) 
+   FJKC_HXILINX_Counter0_6  XLXI_7 (.C(CLK), 
+                                   .CLR(XLXN_22), 
+                                   .J(A_DUMMY), 
+                                   .K(XLXN_9), 
+                                   .Q(B_DUMMY));
+   VCC  XLXI_8 (.P(XLXN_23));
+   OR2  XLXI_9 (.I0(XLXN_26), 
+               .I1(XLXN_27), 
+               .O(XLXN_25));
+   INV  XLXI_10 (.I(B_DUMMY), 
+                .O(XLXN_27));
+   INV  XLXI_11 (.I(C_DUMMY), 
+                .O(XLXN_26));
+endmodule

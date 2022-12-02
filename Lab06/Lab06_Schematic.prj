@@ -1,0 +1,4 @@
+verilog work "CounterCLR.vf"
+verilog work "Comparator.vf"
+verilog work "BCD_Fix.vf"
+verilog work "Lab06_Schematic.vf"

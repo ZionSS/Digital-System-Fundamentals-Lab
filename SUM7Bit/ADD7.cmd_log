@@ -1,0 +1,4 @@
+sch2hdl -intstyle ise -family spartan6 -verilog ADD7_drc.vf -w D:/Workers/Xilinx/SUM7Bit/ADD7.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog ADD7_drc.vf -w D:/Workers/Xilinx/SUM7Bit/ADD7.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog ADD7_drc.vf -w D:/Workers/Xilinx/SUM7Bit/ADD7.sch 
+sch2sym -intstyle ise -family spartan6 -refsym ADD7 D:/Workers/Xilinx/SUM7Bit/ADD7.sch D:/Workers/Xilinx/SUM7Bit/ADD7.sym 

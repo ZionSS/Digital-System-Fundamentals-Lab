@@ -1,0 +1,59 @@
+Running: D:\ProgramData\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/Workers/Xilinx/ALU/ALU_isim_beh.exe -prj D:/Workers/Xilinx/ALU/ALU_beh.prj work.ALU 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/Workers/Xilinx/ALU/diviser_5.vhf" into library work
+Parsing VHDL file "D:/Workers/Xilinx/ALU/diviser_2.vhf" into library work
+Parsing VHDL file "D:/Workers/Xilinx/ALU/SUB.vhf" into library work
+Parsing VHDL file "D:/Workers/Xilinx/ALU/SHIFTBIT.vhf" into library work
+Parsing VHDL file "D:/Workers/Xilinx/ALU/ExOr.vhf" into library work
+Parsing VHDL file "D:/Workers/Xilinx/ALU/diviser_10.vhf" into library work
+Parsing VHDL file "D:/Workers/Xilinx/ALU/ADD.vhf" into library work
+Parsing VHDL file "D:/Workers/Xilinx/ALU/SELECTOR.vhf" into library work
+Parsing VHDL file "D:/Workers/Xilinx/ALU/OPERATE.vhf" into library work
+Parsing VHDL file "D:/Workers/Xilinx/ALU/diviser_100K.vhf" into library work
+Parsing VHDL file "D:/Workers/Xilinx/ALU/BCD_0_F_Decoder.vhf" into library work
+Parsing VHDL file "D:/Workers/Xilinx/ALU/ALU.vhf" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling architecture vcc_v of entity VCC [vcc_default]
+Compiling architecture m4_1e_hxilinx_alu_v of entity M4_1E_HXILINX_ALU [m4_1e_hxilinx_alu_default]
+Compiling architecture d4_16e_hxilinx_alu_v of entity D4_16E_HXILINX_ALU [d4_16e_hxilinx_alu_default]
+Compiling architecture or4_v of entity OR4 [or4_default]
+Compiling architecture or5_v of entity OR5 [or5_default]
+Compiling architecture or6_hxilinx_alu_v of entity OR6_HXILINX_ALU [or6_hxilinx_alu_default]
+Compiling architecture inv_v of entity INV [inv_default]
+Compiling architecture behavioral of entity BCD_0_F_Decoder_MUSER_ALU [bcd_0_f_decoder_muser_alu_defaul...]
+Compiling architecture fd_v of entity FD [\FD('0')\]
+Compiling architecture behavioral of entity diviser_2_MUSER_ALU [diviser_2_muser_alu_default]
+Compiling architecture fdc_v of entity FDC [\FDC('0')\]
+Compiling architecture and2_v of entity AND2 [and2_default]
+Compiling architecture behavioral of entity diviser_5_MUSER_ALU [diviser_5_muser_alu_default]
+Compiling architecture behavioral of entity diviser_10_MUSER_ALU [diviser_10_muser_alu_default]
+Compiling architecture behavioral of entity diviser_100K_MUSER_ALU [diviser_100k_muser_alu_default]
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity CB2CE_HXILINX_ALU [cb2ce_hxilinx_alu_default]
+Compiling architecture behavioral of entity SELECTOR_MUSER_ALU [selector_muser_alu_default]
+Compiling architecture add8_hxilinx_alu_v of entity ADD8_HXILINX_ALU [add8_hxilinx_alu_default]
+Compiling architecture gnd_v of entity GND [gnd_default]
+Compiling architecture behavioral of entity ADD_MUSER_ALU [add_muser_alu_default]
+Compiling architecture inv8_hxilinx_alu_v of entity INV8_HXILINX_ALU [inv8_hxilinx_alu_default]
+Compiling architecture behavioral of entity SUB_MUSER_ALU [sub_muser_alu_default]
+Compiling architecture xor2_v of entity XOR2 [xor2_default]
+Compiling architecture behavioral of entity ExOr_MUSER_ALU [exor_muser_alu_default]
+Compiling architecture behavioral of entity SHIFTBIT_MUSER_ALU [shiftbit_muser_alu_default]
+Compiling architecture behavioral of entity OPERATE_MUSER_ALU [operate_muser_alu_default]
+Compiling architecture m2_1_hxilinx_alu_v of entity M2_1_HXILINX_ALU [m2_1_hxilinx_alu_default]
+Compiling architecture behavioral of entity alu
+Time Resolution for simulation is 1ps.
+Waiting for 18 sub-compilation(s) to finish...
+Compiled 61 VHDL Units
+Built simulation executable D:/Workers/Xilinx/ALU/ALU_isim_beh.exe
+Fuse Memory Usage: 53240 KB
+Fuse CPU Usage: 2092 ms

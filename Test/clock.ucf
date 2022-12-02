@@ -1,0 +1,22 @@
+
+
+NET "OSC" LOC = P123;
+NET "SW" LOC = P47;
+NET "comm_0" LOC = P44;
+NET "comm_1" LOC = P43;
+NET "SEVSEG[6]" LOC = P41;
+NET "SEVSEG[5]" LOC = P40;
+NET "SEVSEG[4]" LOC = P35;
+NET "SEVSEG[3]" LOC = P34;
+NET "SEVSEG[2]" LOC = P32;
+NET "SEVSEG[1]" LOC = P29;
+NET "SEVSEG[0]" LOC = P27;
+
+
+NET "BUZZER" LOC = P83;
+
+# PlanAhead Generated physical constraints 
+
+NET "LED1" LOC = P84;
+NET "LED2" LOC = P85;
+NET "LED3" LOC = P87;

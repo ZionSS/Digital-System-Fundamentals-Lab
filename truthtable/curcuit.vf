@@ -1,0 +1,143 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : curcuit.vf
+// /___/   /\     Timestamp : 11/23/2021 10:54:51
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/Workers/Xilinx/truthtable/curcuit.vf -w D:/Workers/Xilinx/truthtable/curcuit.sch
+//Design Name: curcuit
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module OR7_HXILINX_curcuit (O, I0, I1, I2, I3, I4, I5, I6);
+    
+
+   output O;
+
+   input I0;
+   input I1;
+   input I2;
+   input I3;
+   input I4;
+   input I5;
+   input I6;
+
+assign O = (I0 || I1 || I2 || I3 || I4 || I5 || I6);
+
+endmodule
+`timescale 1ns / 1ps
+
+module curcuit(A, 
+               B, 
+               C, 
+               D, 
+               E, 
+               O);
+
+    input A;
+    input B;
+    input C;
+    input D;
+    input E;
+   output O;
+   
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_11;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_15;
+   wire XLXN_16;
+   wire XLXN_17;
+   wire XLXN_18;
+   wire XLXN_19;
+   wire XLXN_35;
+   wire XLXN_36;
+   wire XLXN_37;
+   wire XLXN_39;
+   wire XLXN_40;
+   wire XLXN_41;
+   wire XLXN_42;
+   
+   AND3  XLXI_1 (.I0(XLXN_8), 
+                .I1(XLXN_7), 
+                .I2(XLXN_6), 
+                .O(XLXN_35));
+   AND3  XLXI_2 (.I0(XLXN_11), 
+                .I1(XLXN_10), 
+                .I2(XLXN_9), 
+                .O(XLXN_36));
+   AND3  XLXI_3 (.I0(XLXN_14), 
+                .I1(XLXN_13), 
+                .I2(XLXN_12), 
+                .O(XLXN_37));
+   AND3  XLXI_4 (.I0(E), 
+                .I1(B), 
+                .I2(XLXN_15), 
+                .O(XLXN_39));
+   AND3  XLXI_5 (.I0(E), 
+                .I1(XLXN_16), 
+                .I2(B), 
+                .O(XLXN_40));
+   AND3  XLXI_7 (.I0(XLXN_19), 
+                .I1(D), 
+                .I2(A), 
+                .O(XLXN_42));
+   AND4  XLXI_8 (.I0(D), 
+                .I1(XLXN_17), 
+                .I2(XLXN_18), 
+                .I3(A), 
+                .O(XLXN_41));
+   (* HU_SET = "XLXI_9_0" *) 
+   OR7_HXILINX_curcuit  XLXI_9 (.I0(XLXN_42), 
+                               .I1(XLXN_41), 
+                               .I2(XLXN_40), 
+                               .I3(XLXN_39), 
+                               .I4(XLXN_37), 
+                               .I5(XLXN_36), 
+                               .I6(XLXN_35), 
+                               .O(O));
+   INV  XLXI_10 (.I(A), 
+                .O(XLXN_6));
+   INV  XLXI_11 (.I(B), 
+                .O(XLXN_7));
+   INV  XLXI_13 (.I(E), 
+                .O(XLXN_8));
+   INV  XLXI_14 (.I(A), 
+                .O(XLXN_9));
+   INV  XLXI_15 (.I(C), 
+                .O(XLXN_10));
+   INV  XLXI_16 (.I(D), 
+                .O(XLXN_11));
+   INV  XLXI_17 (.I(B), 
+                .O(XLXN_12));
+   INV  XLXI_18 (.I(C), 
+                .O(XLXN_13));
+   INV  XLXI_19 (.I(E), 
+                .O(XLXN_14));
+   INV  XLXI_20 (.I(A), 
+                .O(XLXN_15));
+   INV  XLXI_21 (.I(D), 
+                .O(XLXN_16));
+   INV  XLXI_22 (.I(C), 
+                .O(XLXN_17));
+   INV  XLXI_23 (.I(B), 
+                .O(XLXN_18));
+   INV  XLXI_24 (.I(E), 
+                .O(XLXN_19));
+endmodule

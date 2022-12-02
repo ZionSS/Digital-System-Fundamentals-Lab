@@ -1,0 +1,28 @@
+Command line:
+   Buzzer_Buzzer_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  8052
+
+Tue Aug 31 09:10:44 2021
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5154.25 Meg
+
+ Total Signals          : 67
+ Total Nets             : 31
+ Total Signal Drivers   : 23
+ Total Blocks           : 16
+ Total Primitive Blocks : 14
+ Total Processes        : 26
+ Total Traceable Variables  : 23
+ Total Scalar Nets and Variables : 116
+
+ Total Simulation Time: 0.171875 sec
+
+ Current Memory Usage: 4682.39 Meg
+
+Tue Aug 31 09:14:37 2021
+

@@ -1,0 +1,64 @@
+xst -intstyle ise -ifn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.xst" -ofn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Lab06_Schematic.ngc Lab06_Schematic.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab06_Schematic_map.ncd Lab06_Schematic.ngd Lab06_Schematic.pcf 
+par -w -intstyle ise -ol high -mt off Lab06_Schematic_map.ncd Lab06_Schematic.ncd Lab06_Schematic.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab06_Schematic.twx Lab06_Schematic.ncd -o Lab06_Schematic.twr Lab06_Schematic.pcf 
+xst -intstyle ise -ifn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.xst" -ofn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.syr" 
+xst -intstyle ise -ifn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.xst" -ofn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Lab06_Schematic.ngc Lab06_Schematic.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab06_Schematic_map.ncd Lab06_Schematic.ngd Lab06_Schematic.pcf 
+par -w -intstyle ise -ol high -mt off Lab06_Schematic_map.ncd Lab06_Schematic.ncd Lab06_Schematic.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab06_Schematic.twx Lab06_Schematic.ncd -o Lab06_Schematic.twr Lab06_Schematic.pcf 
+xst -intstyle ise -ifn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.xst" -ofn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Lab06_Schematic.ngc Lab06_Schematic.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab06_Schematic_map.ncd Lab06_Schematic.ngd Lab06_Schematic.pcf 
+par -w -intstyle ise -ol high -mt off Lab06_Schematic_map.ncd Lab06_Schematic.ncd Lab06_Schematic.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab06_Schematic.twx Lab06_Schematic.ncd -o Lab06_Schematic.twr Lab06_Schematic.pcf 
+xst -intstyle ise -ifn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.xst" -ofn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Lab06_Schematic.ngc Lab06_Schematic.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab06_Schematic_map.ncd Lab06_Schematic.ngd Lab06_Schematic.pcf 
+par -w -intstyle ise -ol high -mt off Lab06_Schematic_map.ncd Lab06_Schematic.ncd Lab06_Schematic.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab06_Schematic.twx Lab06_Schematic.ncd -o Lab06_Schematic.twr Lab06_Schematic.pcf 
+xst -intstyle ise -ifn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.xst" -ofn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.syr" 
+xst -intstyle ise -ifn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.xst" -ofn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Lab06_Schematic.ngc Lab06_Schematic.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab06_Schematic_map.ncd Lab06_Schematic.ngd Lab06_Schematic.pcf 
+par -w -intstyle ise -ol high -mt off Lab06_Schematic_map.ncd Lab06_Schematic.ncd Lab06_Schematic.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab06_Schematic.twx Lab06_Schematic.ncd -o Lab06_Schematic.twr Lab06_Schematic.pcf 
+xst -intstyle ise -ifn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.xst" -ofn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Lab06_Schematic.ngc Lab06_Schematic.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab06_Schematic_map.ncd Lab06_Schematic.ngd Lab06_Schematic.pcf 
+par -w -intstyle ise -ol high -mt off Lab06_Schematic_map.ncd Lab06_Schematic.ncd Lab06_Schematic.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab06_Schematic.twx Lab06_Schematic.ncd -o Lab06_Schematic.twr Lab06_Schematic.pcf 
+xst -intstyle ise -ifn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.xst" -ofn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.syr" 
+xst -intstyle ise -ifn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.xst" -ofn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Lab06_Schematic.ngc Lab06_Schematic.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab06_Schematic_map.ncd Lab06_Schematic.ngd Lab06_Schematic.pcf 
+par -w -intstyle ise -ol high -mt off Lab06_Schematic_map.ncd Lab06_Schematic.ncd Lab06_Schematic.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab06_Schematic.twx Lab06_Schematic.ncd -o Lab06_Schematic.twr Lab06_Schematic.pcf 
+xst -intstyle ise -ifn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.xst" -ofn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Lab06_Schematic.ngc Lab06_Schematic.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab06_Schematic_map.ncd Lab06_Schematic.ngd Lab06_Schematic.pcf 
+par -w -intstyle ise -ol high -mt off Lab06_Schematic_map.ncd Lab06_Schematic.ncd Lab06_Schematic.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab06_Schematic.twx Lab06_Schematic.ncd -o Lab06_Schematic.twr Lab06_Schematic.pcf 
+xst -intstyle ise -ifn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.xst" -ofn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Lab06_Schematic.ngc Lab06_Schematic.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab06_Schematic_map.ncd Lab06_Schematic.ngd Lab06_Schematic.pcf 
+par -w -intstyle ise -ol high -mt off Lab06_Schematic_map.ncd Lab06_Schematic.ncd Lab06_Schematic.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab06_Schematic.twx Lab06_Schematic.ncd -o Lab06_Schematic.twr Lab06_Schematic.pcf 
+xst -intstyle ise -ifn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.xst" -ofn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.syr" 
+xst -intstyle ise -ifn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.xst" -ofn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Lab06_Schematic.ngc Lab06_Schematic.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab06_Schematic_map.ncd Lab06_Schematic.ngd Lab06_Schematic.pcf 
+par -w -intstyle ise -ol high -mt off Lab06_Schematic_map.ncd Lab06_Schematic.ncd Lab06_Schematic.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab06_Schematic.twx Lab06_Schematic.ncd -o Lab06_Schematic.twr Lab06_Schematic.pcf 
+xst -intstyle ise -ifn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.xst" -ofn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.syr" 
+xst -intstyle ise -ifn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.xst" -ofn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Lab06_Schematic.ngc Lab06_Schematic.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab06_Schematic_map.ncd Lab06_Schematic.ngd Lab06_Schematic.pcf 
+par -w -intstyle ise -ol high -mt off Lab06_Schematic_map.ncd Lab06_Schematic.ncd Lab06_Schematic.pcf 
+xst -intstyle ise -ifn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.xst" -ofn "D:/Workers/Xilinx/Lab06/Lab06_Schematic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Lab06_Schematic.ngc Lab06_Schematic.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab06_Schematic_map.ncd Lab06_Schematic.ngd Lab06_Schematic.pcf 
+par -w -intstyle ise -ol high -mt off Lab06_Schematic_map.ncd Lab06_Schematic.ncd Lab06_Schematic.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab06_Schematic.twx Lab06_Schematic.ncd -o Lab06_Schematic.twr Lab06_Schematic.pcf 

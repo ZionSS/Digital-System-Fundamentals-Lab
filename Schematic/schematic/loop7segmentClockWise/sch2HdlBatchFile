@@ -1,0 +1,6 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/Workers/Schematic/schematic/loop7segmentClockWise/encoder.vf,-w,D:/Workers/Schematic/schematic/loop7segmentClockWise/encoder.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/Workers/Schematic/schematic/loop7segmentClockWise/main2.vf,-w,D:/Workers/Schematic/schematic/loop7segmentClockWise/main2.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/Workers/Schematic/schematic/loop7segmentClockWise/to_1_2_10_100_1000Hz.vf,-w,D:/Workers/Schematic/to_1_2_10_100_1000Hz.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/Workers/Schematic/schematic/loop7segmentClockWise/counter011.vf,-w,D:/Workers/Schematic/schematic/counter/counter011.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/Workers/Schematic/schematic/loop7segmentClockWise/loopSeg.vf,-w,D:/Workers/Schematic/schematic/loop7segmentClockWise/loopSeg.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,D:/Workers/Schematic/schematic/loop7segmentClockWise/main2.vf,-w,D:/Workers/Schematic/schematic/loop7segmentClockWise/main2.sch

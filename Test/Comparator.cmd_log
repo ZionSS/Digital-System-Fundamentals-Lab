@@ -1,0 +1,10 @@
+sch2hdl -intstyle ise -family spartan6 -verilog Comparator_drc.vf -w D:/Workers/Xilinx/Test/Comparator.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog Comparator_drc.vf -w D:/Workers/Xilinx/Test/Comparator.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym Comparator D:/Workers/Xilinx/Test/Comparator.sch D:/Workers/Xilinx/Test/Comparator.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog Comparator_drc.vf -w D:/Workers/Xilinx/Test/Comparator.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog Comparator_drc.vf -w D:/Workers/Xilinx/Test/Comparator.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym Comparator D:/Workers/Xilinx/Test/Comparator.sch D:/Workers/Xilinx/Test/Comparator.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog Comparator_drc.vf -w D:/Workers/Xilinx/Test/Comparator.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym Comparator D:/Workers/Xilinx/Test/Comparator.sch D:/Workers/Xilinx/Test/Comparator.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog Comparator_drc.vf -w D:/Workers/Xilinx/Test/Comparator.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym Comparator D:/Workers/Xilinx/Test/Comparator.sch D:/Workers/Xilinx/Test/Comparator.sym 

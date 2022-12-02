@@ -1,0 +1,80 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from E:/Programs/ISE/ISE/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [E:/Programs/ISE/ISE/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [E:/Programs/ISE/ISE/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source E:/Programs/ISE/preTest/pa.fromNetlist.tcl
+# create_project -name preTest -dir "E:/Programs/ISE/preTest/planAhead_run_2" -part xc6slx9tqg144-3
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "E:/Programs/ISE/preTest/main2.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {E:/Programs/ISE/preTest} }
+# set_param project.pinAheadLayout  yes
+# set_property target_constrs_file "main2.ucf" [current_fileset -constrset]
+Adding file 'E:/Programs/ISE/preTest/main2.ucf' to fileset 'constrs_1'
+# add_files [list {main2.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6slx9tqg144-3
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design main2.ngc ...
+WARNING:NetListWriters:298 - No output is written to main2.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file main2.edif ...
+ngc2edif: Total memory usage is 4310848 kilobytes
+
+Parsing EDIF File [./planAhead_run_2/preTest.data/cache/main2_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_2/preTest.data/cache/main2_ngc_zx.edif]
+Loading clock regions from E:/Programs/ISE/ISE/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from E:/Programs/ISE/ISE/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from E:/Programs/ISE/ISE/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from E:/Programs/ISE/ISE/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from E:/Programs/ISE/ISE/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from E:/Programs/ISE/ISE/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : E:/Programs/ISE/ISE/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [E:/Programs/ISE/preTest/main2.ucf]
+Finished Parsing UCF File [E:/Programs/ISE/preTest/main2.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: f89e1c09
+link_design: Time (s): elapsed = 00:00:09 . Memory (MB): peak = 617.574 ; gain = 171.895
+startgroup
+set_property package_pin P59 [get_ports {INPUT[3]}]
+endgroup
+startgroup
+set_property package_pin P61 [get_ports {INPUT[2]}]
+endgroup
+startgroup
+set_property package_pin P62 [get_ports {INPUT[1]}]
+endgroup
+startgroup
+set_property package_pin P66 [get_ports {INPUT[0]}]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports {Common[0]}]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports {Common[1]}]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports {Common[2]}]
+endgroup
+startgroup
+set_property package_pin P30 [get_ports {Common[3]}]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Nov 25 11:00:34 2019...
+INFO: [Common 17-83] Releasing license: PlanAhead

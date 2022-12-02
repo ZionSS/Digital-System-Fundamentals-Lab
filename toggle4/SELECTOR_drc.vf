@@ -1,0 +1,70 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : SELECTOR_drc.vf
+// /___/   /\     Timestamp : 11/23/2021 11:48:39
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: D:\ProgramData\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog SELECTOR_drc.vf -w D:/Workers/Xilinx/ALU/SELECTOR.sch
+//Design Name: SELECTOR
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module CB2CE_HXILINX_SELECTOR(CEO, Q0, Q1, TC, C, CE, CLR);
+   
+   localparam TERMINAL_COUNT = 2'b11;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q1, Q0} <= 2'b00;
+	else if (CE)
+	  {Q1,Q0} <= {Q1,Q0} + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = ({Q1,Q0} == TERMINAL_COUNT);
+   
+endmodule
+`timescale 1ns / 1ps
+
+module SELECTOR(CLK, 
+                S);
+
+    input CLK;
+   output [1:0] S;
+   
+   wire XLXN_81;
+   
+   (* HU_SET = "XLXI_14_0" *) 
+   CB2CE_HXILINX_SELECTOR  XLXI_14 (.C(CLK), 
+                                   .CE(XLXN_81), 
+                                   .CLR(), 
+                                   .CEO(), 
+                                   .Q0(S[0]), 
+                                   .Q1(S[1]), 
+                                   .TC());
+   VCC  XLXI_29 (.P(XLXN_81));
+endmodule

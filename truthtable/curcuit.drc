@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Tue Nov 23 10:57:26 2021
+
+drc -z curcuit.ncd curcuit.pcf
+
+DRC detected 0 errors and 0 warnings.

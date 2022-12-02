@@ -1,0 +1,85 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Buzzer.vf
+// /___/   /\     Timestamp : 08/30/2021 23:32:39
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/Workers/Xilinx/Lab04_Buzzer/Buzzer.vf -w D:/Workers/Xilinx/Lab04_Buzzer/Buzzer.sch
+//Design Name: Buzzer
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Buzzer(B, 
+              D, 
+              E, 
+              H, 
+              S, 
+              Buzzer);
+
+    input B;
+    input D;
+    input E;
+    input H;
+    input S;
+   output Buzzer;
+   
+   wire XLXN_1;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_11;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_15;
+   wire XLXN_21;
+   
+   AND2  XLXI_1 (.I0(E), 
+                .I1(XLXN_13), 
+                .O(XLXN_4));
+   AND2  XLXI_3 (.I0(S), 
+                .I1(XLXN_21), 
+                .O(XLXN_5));
+   AND2  XLXI_4 (.I0(XLXN_11), 
+                .I1(H), 
+                .O(XLXN_7));
+   AND2  XLXI_5 (.I0(D), 
+                .I1(XLXN_15), 
+                .O(XLXN_8));
+   AND2  XLXI_7 (.I0(B), 
+                .I1(XLXN_14), 
+                .O(XLXN_15));
+   AND2  XLXI_8 (.I0(E), 
+                .I1(XLXN_12), 
+                .O(XLXN_21));
+   OR2  XLXI_9 (.I0(XLXN_5), 
+               .I1(XLXN_4), 
+               .O(XLXN_1));
+   OR2  XLXI_10 (.I0(XLXN_8), 
+                .I1(XLXN_7), 
+                .O(XLXN_3));
+   OR2  XLXI_11 (.I0(XLXN_3), 
+                .I1(XLXN_1), 
+                .O(Buzzer));
+   INV  XLXI_27 (.I(D), 
+                .O(XLXN_13));
+   INV  XLXI_28 (.I(B), 
+                .O(XLXN_12));
+   INV  XLXI_29 (.I(E), 
+                .O(XLXN_11));
+   INV  XLXI_30 (.I(S), 
+                .O(XLXN_14));
+endmodule

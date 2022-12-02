@@ -1,0 +1,111 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : CounterEven.vf
+// /___/   /\     Timestamp : 11/23/2021 09:39:50
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/Workers/Xilinx/CountEven/CounterEven.vf -w D:/Workers/Xilinx/CountEven/CounterEven.sch
+//Design Name: CounterEven
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_CounterEven(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module CounterEven(CLK, 
+                   A, 
+                   B, 
+                   C, 
+                   D);
+
+    input CLK;
+   output A;
+   output B;
+   output C;
+   output D;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_6;
+   wire XLXN_10;
+   wire B_DUMMY;
+   wire C_DUMMY;
+   
+   assign B = B_DUMMY;
+   assign C = C_DUMMY;
+   (* HU_SET = "XLXI_1_0" *) 
+   FJKC_HXILINX_CounterEven  XLXI_1 (.C(CLK), 
+                                    .CLR(XLXN_10), 
+                                    .J(XLXN_6), 
+                                    .K(C_DUMMY), 
+                                    .Q(A));
+   (* HU_SET = "XLXI_2_1" *) 
+   FJKC_HXILINX_CounterEven  XLXI_2 (.C(CLK), 
+                                    .CLR(XLXN_10), 
+                                    .J(C_DUMMY), 
+                                    .K(C_DUMMY), 
+                                    .Q(B_DUMMY));
+   (* HU_SET = "XLXI_3_2" *) 
+   FJKC_HXILINX_CounterEven  XLXI_3 (.C(CLK), 
+                                    .CLR(XLXN_10), 
+                                    .J(XLXN_2), 
+                                    .K(XLXN_2), 
+                                    .Q(C_DUMMY));
+   (* HU_SET = "XLXI_4_3" *) 
+   FJKC_HXILINX_CounterEven  XLXI_4 (.C(CLK), 
+                                    .CLR(XLXN_10), 
+                                    .J(XLXN_1), 
+                                    .K(), 
+                                    .Q(D));
+   GND  XLXI_5 (.G(XLXN_1));
+   VCC  XLXI_6 (.P(XLXN_2));
+   AND2  XLXI_7 (.I0(B_DUMMY), 
+                .I1(C_DUMMY), 
+                .O(XLXN_6));
+   GND  XLXI_8 (.G(XLXN_10));
+endmodule

@@ -1,0 +1,301 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Lab06_Schematic.vf
+// /___/   /\     Timestamp : 09/21/2021 09:32:26
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/Workers/Xilinx/Lab06/Lab06_Schematic.vf -w D:/Workers/Xilinx/Lab06/Lab06_Schematic.sch
+//Design Name: Lab06_Schematic
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_Lab06_Schematic(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module Comparator_MUSER_Lab06_Schematic(A1, 
+                                        A2, 
+                                        A3, 
+                                        A4, 
+                                        B1, 
+                                        B2, 
+                                        B3, 
+                                        B4, 
+                                        OP);
+
+    input A1;
+    input A2;
+    input A3;
+    input A4;
+    input B1;
+    input B2;
+    input B3;
+    input B4;
+   output OP;
+   
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_11;
+   wire XLXN_13;
+   
+   XOR2  XLXI_1 (.I0(B1), 
+                .I1(A1), 
+                .O(XLXN_9));
+   XOR2  XLXI_2 (.I0(B2), 
+                .I1(A2), 
+                .O(XLXN_10));
+   XOR2  XLXI_3 (.I0(B3), 
+                .I1(A3), 
+                .O(XLXN_11));
+   XOR2  XLXI_4 (.I0(B4), 
+                .I1(A4), 
+                .O(XLXN_13));
+   AND4B4  XLXI_7 (.I0(XLXN_13), 
+                  .I1(XLXN_11), 
+                  .I2(XLXN_10), 
+                  .I3(XLXN_9), 
+                  .O(OP));
+endmodule
+`timescale 1ns / 1ps
+
+module CounterCLR_MUSER_Lab06_Schematic(CLK, 
+                                        CLR, 
+                                        Q0, 
+                                        Q1, 
+                                        Q2, 
+                                        Q3);
+
+    input CLK;
+    input CLR;
+   output Q0;
+   output Q1;
+   output Q2;
+   output Q3;
+   
+   wire XLXN_1;
+   wire XLXN_28;
+   wire XLXN_35;
+   wire XLXN_48;
+   wire XLXN_53;
+   wire XLXN_240;
+   wire Q0_DUMMY;
+   wire Q1_DUMMY;
+   wire Q2_DUMMY;
+   wire Q3_DUMMY;
+   
+   assign Q0 = Q0_DUMMY;
+   assign Q1 = Q1_DUMMY;
+   assign Q2 = Q2_DUMMY;
+   assign Q3 = Q3_DUMMY;
+   (* HU_SET = "XLXI_1_0" *) 
+   FJKC_HXILINX_Lab06_Schematic  XLXI_1 (.C(CLK), 
+                                        .CLR(CLR), 
+                                        .J(XLXN_1), 
+                                        .K(XLXN_1), 
+                                        .Q(Q3_DUMMY));
+   VCC  XLXI_2 (.P(XLXN_1));
+   (* HU_SET = "XLXI_3_2" *) 
+   FJKC_HXILINX_Lab06_Schematic  XLXI_3 (.C(CLK), 
+                                        .CLR(CLR), 
+                                        .J(XLXN_35), 
+                                        .K(Q3_DUMMY), 
+                                        .Q(Q2_DUMMY));
+   (* HU_SET = "XLXI_4_1" *) 
+   FJKC_HXILINX_Lab06_Schematic  XLXI_4 (.C(CLK), 
+                                        .CLR(CLR), 
+                                        .J(XLXN_48), 
+                                        .K(XLXN_28), 
+                                        .Q(Q1_DUMMY));
+   AND2  XLXI_21 (.I0(Q2_DUMMY), 
+                 .I1(Q3_DUMMY), 
+                 .O(XLXN_48));
+   AND2  XLXI_22 (.I0(Q2_DUMMY), 
+                 .I1(Q3_DUMMY), 
+                 .O(XLXN_28));
+   AND3  XLXI_24 (.I0(Q1_DUMMY), 
+                 .I1(Q2_DUMMY), 
+                 .I2(Q3_DUMMY), 
+                 .O(XLXN_53));
+   AND2  XLXI_141 (.I0(Q3_DUMMY), 
+                  .I1(XLXN_240), 
+                  .O(XLXN_35));
+   INV  XLXI_142 (.I(Q0_DUMMY), 
+                 .O(XLXN_240));
+   (* HU_SET = "XLXI_143_3" *) 
+   FJKC_HXILINX_Lab06_Schematic  XLXI_143 (.C(CLK), 
+                                          .CLR(CLR), 
+                                          .J(XLXN_53), 
+                                          .K(Q3_DUMMY), 
+                                          .Q(Q0_DUMMY));
+endmodule
+`timescale 1ns / 1ps
+
+module Lab06_Schematic(CLKA, 
+                       CLKB, 
+                       CLR, 
+                       SW, 
+                       Aa, 
+                       Ab, 
+                       Ac, 
+                       Ad, 
+                       Ae, 
+                       Af, 
+                       Ag, 
+                       Ba, 
+                       Bb, 
+                       Bc, 
+                       Bd, 
+                       Be, 
+                       Bf, 
+                       Bg, 
+                       Buzzer, 
+                       Q0A, 
+                       Q0B, 
+                       Q1A, 
+                       Q1B, 
+                       Q2A, 
+                       Q2B, 
+                       Q3A, 
+                       Q3B);
+
+    input CLKA;
+    input CLKB;
+    input CLR;
+    input SW;
+   output Aa;
+   output Ab;
+   output Ac;
+   output Ad;
+   output Ae;
+   output Af;
+   output Ag;
+   output Ba;
+   output Bb;
+   output Bc;
+   output Bd;
+   output Be;
+   output Bf;
+   output Bg;
+   output Buzzer;
+   output Q0A;
+   output Q0B;
+   output Q1A;
+   output Q1B;
+   output Q2A;
+   output Q2B;
+   output Q3A;
+   output Q3B;
+   
+   wire XLXN_414;
+   wire XLXN_415;
+   wire Q1A_DUMMY;
+   wire Q1B_DUMMY;
+   wire Q2A_DUMMY;
+   wire Q2B_DUMMY;
+   wire Q3A_DUMMY;
+   wire Q3B_DUMMY;
+   wire Q0A_DUMMY;
+   wire Q0B_DUMMY;
+   
+   assign Q0A = Q0A_DUMMY;
+   assign Q0B = Q0B_DUMMY;
+   assign Q1A = Q1A_DUMMY;
+   assign Q1B = Q1B_DUMMY;
+   assign Q2A = Q2A_DUMMY;
+   assign Q2B = Q2B_DUMMY;
+   assign Q3A = Q3A_DUMMY;
+   assign Q3B = Q3B_DUMMY;
+   AND2  XLXI_233 (.I0(CLKB), 
+                  .I1(SW), 
+                  .O(XLXN_414));
+   AND2  XLXI_234 (.I0(SW), 
+                  .I1(CLKA), 
+                  .O(XLXN_415));
+   BCD_Fix  XLXI_251 (.Q0(Q0A_DUMMY), 
+                     .Q1(Q1A_DUMMY), 
+                     .Q2(Q2A_DUMMY), 
+                     .Q3(Q3A_DUMMY), 
+                     .a(Aa), 
+                     .b(Ab), 
+                     .c(Ac), 
+                     .d(Ad), 
+                     .e(Ae), 
+                     .f(Af), 
+                     .g(Ag));
+   BCD_Fix  XLXI_252 (.Q0(Q0B_DUMMY), 
+                     .Q1(Q1B_DUMMY), 
+                     .Q2(Q2B_DUMMY), 
+                     .Q3(Q3B_DUMMY), 
+                     .a(Ba), 
+                     .b(Bb), 
+                     .c(Bc), 
+                     .d(Bd), 
+                     .e(Be), 
+                     .f(Bf), 
+                     .g(Bg));
+   CounterCLR_MUSER_Lab06_Schematic  XLXI_256 (.CLK(XLXN_414), 
+                                              .CLR(CLR), 
+                                              .Q0(Q3B_DUMMY), 
+                                              .Q1(Q2B_DUMMY), 
+                                              .Q2(Q1B_DUMMY), 
+                                              .Q3(Q0B_DUMMY));
+   CounterCLR_MUSER_Lab06_Schematic  XLXI_257 (.CLK(XLXN_415), 
+                                              .CLR(CLR), 
+                                              .Q0(Q3A_DUMMY), 
+                                              .Q1(Q2A_DUMMY), 
+                                              .Q2(Q1A_DUMMY), 
+                                              .Q3(Q0A_DUMMY));
+   Comparator_MUSER_Lab06_Schematic  XLXI_260 (.A1(Q0A_DUMMY), 
+                                              .A2(Q1A_DUMMY), 
+                                              .A3(Q2A_DUMMY), 
+                                              .A4(Q3A_DUMMY), 
+                                              .B1(Q0B_DUMMY), 
+                                              .B2(Q1B_DUMMY), 
+                                              .B3(Q2B_DUMMY), 
+                                              .B4(Q3B_DUMMY), 
+                                              .OP(Buzzer));
+endmodule

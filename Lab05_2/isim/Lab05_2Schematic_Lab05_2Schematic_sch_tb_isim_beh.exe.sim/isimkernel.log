@@ -1,0 +1,28 @@
+Command line:
+   Lab05_2Schematic_Lab05_2Schematic_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  14331
+
+Tue Sep 07 09:39:05 2021
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 5154.21 Meg
+
+ Total Signals          : 51
+ Total Nets             : 26
+ Total Signal Drivers   : 18
+ Total Blocks           : 12
+ Total Primitive Blocks : 10
+ Total Processes        : 25
+ Total Traceable Variables  : 25
+ Total Scalar Nets and Variables : 113
+
+ Total Simulation Time: 0.109375 sec
+
+ Current Memory Usage: 5468.78 Meg
+
+Tue Sep 07 09:39:43 2021
+

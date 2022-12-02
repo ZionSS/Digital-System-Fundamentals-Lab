@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/Workers/Xilinx/Lab04_Buzzer/Buzzer.xst" -ofn "D:/Workers/Xilinx/Lab04_Buzzer/Buzzer.syr" 

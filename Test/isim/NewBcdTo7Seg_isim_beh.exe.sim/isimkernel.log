@@ -1,0 +1,28 @@
+Command line:
+   NewBcdTo7Seg_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  12831
+
+Tue Nov 23 02:35:27 2021
+
+
+ Elaboration Time: 0.109375 sec
+
+ Current Memory Usage: 5154.2 Meg
+
+ Total Signals          : 184
+ Total Nets             : 61
+ Total Signal Drivers   : 49
+ Total Blocks           : 46
+ Total Primitive Blocks : 45
+ Total Processes        : 50
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 141
+
+ Total Simulation Time: 0.3125 sec
+
+ Current Memory Usage: 4682.34 Meg
+
+Tue Nov 23 02:39:04 2021
+

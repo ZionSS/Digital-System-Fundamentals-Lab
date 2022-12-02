@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Nov 25 10:58:57 2019
+# Process ID: 13032
+# Log file: E:/Programs/ISE/preTest/planAhead_run_2/planAhead.log
+# Journal file: E:/Programs/ISE/preTest/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source E:/Programs/ISE/preTest/pa.fromNetlist.tcl
+startgroup
+set_property package_pin P59 [get_ports {INPUT[3]}]
+endgroup
+startgroup
+set_property package_pin P61 [get_ports {INPUT[2]}]
+endgroup
+startgroup
+set_property package_pin P62 [get_ports {INPUT[1]}]
+endgroup
+startgroup
+set_property package_pin P66 [get_ports {INPUT[0]}]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports {Common[0]}]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports {Common[1]}]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports {Common[2]}]
+endgroup
+startgroup
+set_property package_pin P30 [get_ports {Common[3]}]
+endgroup
+save_constraints

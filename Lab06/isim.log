@@ -1,0 +1,60 @@
+ISim log file
+Running: D:\Workers\Xilinx\Lab06\Lab06_Schematic_Lab06_Schematic_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Workers/Xilinx/Lab06/Lab06_Schematic_Lab06_Schematic_sch_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ch1= 0 | ch2 = 0
+Start.
+ch1= 1 | ch2 = 2
+ch1= 2 | ch2 = 3
+ch1= 2 | ch2 = 4
+ch1= 3 | ch2 = 4
+ch1= 3 | ch2 = 5
+ch1= 3 | ch2 = 6
+ch1= 4 | ch2 = 6
+ch1= 4 | ch2 = 7
+ch1= 5 | ch2 = 8
+ch1= 5 | ch2 = 9
+ch1= 6 | ch2 = 9
+ch1= 6 | ch2 = 0
+ch1= 6 | ch2 = 1
+ch1= 7 | ch2 = 1
+ch1= 7 | ch2 = 2
+ch1= 8 | ch2 = 3
+ch1= 8 | ch2 = 4
+ch1= 9 | ch2 = 4
+ch1= 9 | ch2 = 5
+ch1= 9 | ch2 = 6
+ch1= 0 | ch2 = 6
+ch1= 0 | ch2 = 7
+ch1= 1 | ch2 = 8
+ch1= 1 | ch2 = 9
+ch1= 2 | ch2 = 9
+ch1= 2 | ch2 = 0
+ch1= 2 | ch2 = 1
+Stop : Buzzer = 0 .
+Start again.
+ch1= 3 | ch2 = 2
+ch1= 3 | ch2 = 3
+ch1= 4 | ch2 = 3
+ch1= 4 | ch2 = 4
+ch1= 5 | ch2 = 5
+Stop : Buzzer = 1 .
+Start again.
+ch1= 5 | ch2 = 6
+ch1= 6 | ch2 = 6
+ch1= 6 | ch2 = 7
+ch1= 7 | ch2 = 8
+ch1= 7 | ch2 = 9
+ch1= 8 | ch2 = 9
+ch1= 8 | ch2 = 0
+ch1= 8 | ch2 = 1
+ch1= 9 | ch2 = 1
+ch1= 9 | ch2 = 2
+Stop : Buzzer = 0 .
+Stopped at time : 360 ns : File "D:/Workers/Xilinx/Lab06/Lab06_Verilog.v" Line 135
